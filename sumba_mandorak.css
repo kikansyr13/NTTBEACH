@@ -1,0 +1,192 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    width: 50px; 
+    margin-right: 10px;
+    height: auto;
+  }
+  
+  header{
+    width: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #568888; 
+    color: white;
+    z-index: 3;
+    position: fixed;
+   width: 100%;
+   margin: 0 auto;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  .menu a:hover{color: aqua;}
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #62b3ab;
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }    
+  
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Article Title */
+.article-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10%;
+    color: #3498db;
+}
+
+/* Article Meta */
+.article-meta {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Article Content */
+.article-content {
+    line-height: 1.6;
+}
+
+/* Section Title */
+.article-content h2 {
+    font-size: 24px;
+    color: #3498db;
+}
+
+.article-content p {
+    margin-bottom: 15px;
+}
+
+.article-content ul {
+    margin-left: 20px;
+}
+
+/* Image */
+.article-image {
+    width: 80%;              /* Ukuran gambar diatur menjadi 80% dari lebar kontainer */
+    height: auto;            /* Menjaga rasio aspek gambar */
+    margin-top: 70px;        /* Memberikan jarak 50px antara gambar dan header */
+    margin-bottom: 20px;     /* Memberikan jarak 20px di bawah gambar */
+    display: block;          /* Mengubah gambar menjadi elemen blok agar margin auto bekerja */
+    margin-left: auto;       /* Menyelaraskan gambar ke tengah secara horizontal */
+    margin-right: auto;      /* Menyelaraskan gambar ke tengah secara horizontal */
+}
+
+
+
+/* footer */
+.footer {
+    background-color: #568888; 
+    color: white; 
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+
+}
+
+.footer-left {
+    font-size: 16px;
+     color:rgb(104, 188, 207);
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px; 
+}
+
+.footer-right a {
+    color: rgb(128, 180, 180);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-right a:hover {
+    color: aqua;
+}
+.spacer{
+    height: 20px;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+}
+/* footer end */
+@media (max-width: 768px) {
+    .info-card {
+      width: calc(50% - 20px); /* Untuk 2 kolom pada layar lebih kecil */
+    }
+  }
+

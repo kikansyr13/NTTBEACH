@@ -1,0 +1,293 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    width: 50px; 
+    margin-right: 10px;
+    height: auto;
+  }
+  
+  header{
+    width: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #568888; 
+    color: white;
+    z-index: 3;
+    position: fixed;
+   width: 100%;
+   margin: 0 auto;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  .menu a:hover{color: aqua;}
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #62b3ab;
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }    
+  /* Video Section */
+  .video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /*kalimat pembuka sumba*/
+  .kalimat_sumba {
+    padding: 50px;
+    text-align: left;
+    
+  }
+
+  .kalimat_sumba h1{
+    font-size: 2rem;
+    color: blue;
+  }
+
+  /* Recomendasi Wisata */
+  .recommendations {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .recommendations h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .card-containerwisata {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 300px;
+    background-color: rgb(209, 204, 204);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-img {
+    width: 100%; /* Lebar gambar 100% dari lebar card */
+    height: 200px; /* Tinggi gambar seragam */
+    object-fit: contain; /* Memastikan gambar mengisi area tanpa merusak rasio */
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #666;
+  }
+
+  
+ 
+  /*penginapan*/
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex; /* Flexbox untuk tata letak vertikal */
+    flex-direction: column; /* Mengatur elemen dalam card secara vertikal */
+    height: 100%; /* Memastikan card mengambil seluruh tinggi yang ada */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Menyebar konten secara vertikal */
+    flex-grow: 1; /* Membuat card body mengambil ruang yang tersedia */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #333;
+}
+
+.card-description {
+    color: #777;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    padding-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.button {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #e64a19;
+}
+  
+
+ 
+  /* Footer */
+/* footer */
+.footer {
+  background-color: #568888; 
+  color: white; 
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap; 
+
+}
+
+.footer-left {
+  font-size: 16px;
+   color:rgb(0, 77, 95);
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px; 
+}
+
+.footer-right a {
+  color: rgb(128, 180, 180);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-right a:hover {
+  color: aqua;
+}
+.spacer{
+  height: 20px;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-right {
+      margin-top: 10px;
+  }
+}
+
+  /* footer end */
